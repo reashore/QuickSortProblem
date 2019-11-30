@@ -67,7 +67,7 @@ namespace MarkAndToysProblem
         {
             if (start < end)
             {
-                var i = Partition(arr, start, end);
+                int i = Partition(arr, start, end);
 
                 QuickSortInternal(arr, start, i - 1);
                 QuickSortInternal(arr, i + 1, end);
